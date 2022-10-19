@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String       @id @default(uuid())
+  username   String       @unique
+  email      String       @unique
+  password   String
+  joined_at  DateTime     @default(now())
+  Collectible Collectible[]
+}
+
+model Collectible {
+  id          String @id @default(uuid())
+  title       String
+  description String
+  worth       Int
+  owner       User?  @relation(fields: [owner_id], references: [id])
+  owner_id    String
+}

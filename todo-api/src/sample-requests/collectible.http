@@ -1,0 +1,37 @@
+# GET http://localhost:3010/check2
+
+
+# GET http://localhost:3010/collectibles
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+
+# POST http://localhost:3010/create-collectible
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+
+# {
+#     "title": "test 2",
+#     "description":"test 2 description",
+#     "worth":50
+# }
+
+# GET http://localhost:3010/collectible/49d57b19-62d5-4ff8-b097-94288d954c78
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+
+# PUT http://localhost:3010/collectible/49d57b19-62d5-4ff8-b097-94288d954c78
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+# Content-Type: application/json
+
+# {
+#     "title": "test 1",
+#     "description":"test 1 description",
+#     "worth": 70
+# }
+
+
+# DELETE  http://localhost:3010/collectible/fa3dda06-02d7-4034-8282-7b8524b67576
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+
+
+# DELETE  http://localhost:3010/collectibles
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+

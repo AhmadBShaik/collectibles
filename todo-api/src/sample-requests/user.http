@@ -1,0 +1,22 @@
+# POST http://localhost:3010/api/register
+# Content-Type: application/json
+
+# {
+#     "username": "ahmad223",
+#     "email":"ahmadbshaik32323@email.com",
+#     "password": "Test@1234",
+#     "passwordConfirmation":"Test@1234"
+# }
+
+# GET http://localhost:3010/check
+
+# POST http://localhost:3010/api/login
+# Content-Type: application/json
+
+# {
+#     "email":"ahmadbshaik1@email.com",
+#     "password": "Test@1234"
+# }
+
+# GET http://localhost:3010/get-current-user
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
