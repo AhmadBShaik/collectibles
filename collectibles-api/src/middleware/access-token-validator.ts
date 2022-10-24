@@ -14,7 +14,7 @@ export const authenticateToken = (
     if (err) {
       console.log(err);
 
-      res.status(403).json({ message: "Forbidden" });
+      res.status(403).json({ message: "Invalid token" });
     }
     req.params.owner_id = owner_id as string;
   });

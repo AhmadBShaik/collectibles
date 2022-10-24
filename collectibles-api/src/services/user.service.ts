@@ -23,7 +23,7 @@ export const loginUser = async (credentials: LoginUser) => {
       id: true,
     },
   });
-  
+
   const accessToken = sign(user?.id!, process.env.JWT_SECRET!);
   return accessToken;
 };
@@ -31,14 +31,32 @@ export const loginUser = async (credentials: LoginUser) => {
 export const getCurrentUser = async (userId: string) => {
   const currentUser = await prisma.user.findFirst({
     where: {
-      id: userId
+      id: userId,
     },
     select: {
       id: true,
       username: true,
       email: true,
-      joined_at: true
+      joined_at: true,
     },
   });
   return currentUser;
-}
+};
+
+export const checkEmailValidity = async (email: string) => {
+  const user = await prisma.user.findFirst({
+    where: {
+      email: email,
+    },
+  });
+  return user;
+};
+
+export const checkUsernamelValidity = async (username: string) => {
+  const user = await prisma.user.findFirst({
+    where: {
+      username: username,
+    },
+  });
+  return user;
+};

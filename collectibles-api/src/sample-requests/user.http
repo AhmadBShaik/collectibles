@@ -1,0 +1,39 @@
+# POST http://localhost:3010/api/user/sign-up
+# Content-Type: application/json
+
+# {
+#     "username": "ahmad223",
+#     "email":"ahmadbshaik32323@email.com",
+#     "password": "Test@1234",
+#     "passwordConfirmation":"Test@1234"
+# }
+
+# GET http://localhost:3010/api/user/check
+
+# POST http://localhost:3010/api/user/sign-in
+# Content-Type: application/json
+
+# {
+#     "email":"ahmadbshaik1@email.com",
+#     "password": "Test@1234"
+# }
+
+# GET http://localhost:3010/api/user/get-current-user
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGMxMWRhYzktMWFhOS00NWM0LTg1N2QtNDhjODAzZjYzMjAw.iuDEGYNgFberogSyph4MHIWfiZms_Z-EquihgAN2ST0
+
+# POST http://localhost:3010/api/user/is-valid-email
+# Content-Type: application/json
+
+# {
+#     "email":"ahmad@gmail.com"
+# }
+
+# POST http://localhost:3010/api/user/is-valid-username
+# Content-Type: application/json
+
+# {
+#     "username":"ahmad1"
+# }
+
+GET http://localhost:3010/api/user/is-authenticated
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.OGUxMzdmNzgtMzIxMi00ODBmLTk0YzctMTI1Y2ZjNzdiNmZh.1iZ9R4bGTZmPVbPUrKDREreEqSevyd9wqmRUrzFdPhM
